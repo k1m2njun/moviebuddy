@@ -1,5 +1,6 @@
 package moviebuddy.domain;
 
+import java.net.URI;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -77,13 +78,17 @@ public class Movie {
         return "Movie [title=" + title + ", releaseYear=" + releaseYear + ", director=" + director + ", watchedDate=" + watchedDate.format(DEFAULT_WATCHED_DATE_FORMATTER) + "]";
     }
 
-    
-    public static Movie of(String title, List<String> genres, String language, String country, int releaseYear, String director, List<String> actors, URL imdbLink, String watchedDate) {
-        return new Movie(title, genres, language, country, releaseYear, director, actors, imdbLink, LocalDate.parse(watchedDate, Movie.DEFAULT_WATCHED_DATE_FORMATTER));
-    }
+	public static Movie of(String title2, List<String> genres2, String language2, String country2, int releaseYear2,
+			String director2, List<String> actors2, URI imdbLink2, String watchedDate2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-    public static Movie of(String title, List<String> genres, String language, String country, int releaseYear, String director, List<String> actors, URL imdbLink, LocalDate watchedDate) {
-        return new Movie(title, genres, language, country, releaseYear, director, actors, imdbLink, watchedDate);
-    }
+	public static Movie of(String title2, List<String> genres2, String language2, String country2, int releaseYear2,
+			String director2, List<String> actors2, URL imdbLink2, String watchedDate2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 }

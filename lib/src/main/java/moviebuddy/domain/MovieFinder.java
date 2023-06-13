@@ -31,5 +31,4 @@ public class MovieFinder {
                            .filter(it -> Objects.equals(it.getReleaseYear(), releasedYearBy))
                            .collect(Collectors.toList());
     }
-
 }
